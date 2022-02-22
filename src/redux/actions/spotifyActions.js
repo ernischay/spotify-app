@@ -1,9 +1,4 @@
-import axios from 'axios'
 import { ActionTypes } from '../constants/action-types'
-
-const spotify = axios.create({
-    baseURL: 'https://api.spotify.com/v1',
-})
 
 export const setAccessToken = (token) => {
     return {

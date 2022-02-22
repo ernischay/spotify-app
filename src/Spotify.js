@@ -30,7 +30,7 @@ function Spotify() {
                 <Router>
                     <Sidebar />
                     <Routes>
-                        <Route path='/' element={<Home />} />
+                        <Route path='/#' element={<Home />} />
                         <Route path='/profile' element={<Profile />} />
                     </Routes>
                 </Router>

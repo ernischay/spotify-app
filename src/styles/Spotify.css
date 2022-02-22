@@ -1,0 +1,49 @@
+.spotify {
+    display: flex;
+    background-color: #191414;
+    font-family: sans-serif;
+}
+
+@media (max-width: 768px) {
+    .spotify {
+        flex-direction: column;
+    }
+    .sidebarItem:last-child {
+        position: unset;
+    }
+    .profile {
+        flex-direction: column;
+    }
+}
+
+.main {
+    padding: 40px;
+    display: flex;
+    flex: 0.8;
+    flex-direction: column;
+    color: white;
+}
+
+.link {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    background-color: #1db954;
+    padding: 10px 25px;
+    border-radius: 20px;
+    margin-top: 20px;
+    max-width: 250px;
+}
+
+.login {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-evenly;
+    align-content: space-around;
+}

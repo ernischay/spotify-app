@@ -1,6 +1,6 @@
 export const AUTH_ENDPOINT = 'https://accounts.spotify.com/authorize'
-export const CLIENT_ID = 'ca4314ca34934415a76aea15f501001b'
-export const REDIRECT_URL = 'http://localhost:3000/'
+export const CLIENT_ID = 'caa84894b1474748afaf988730dfc4db'
+export const REDIRECT_URL = 'https://nervous-panini-05d3a3.netlify.app/'
 
 const scopes = [
     'user-read-currently-playing',

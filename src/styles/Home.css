@@ -1,0 +1,39 @@
+.homePageGreeting {
+    color: #1db954;
+    font-size: 40px;
+}
+
+.playlist {
+    margin: 20px 0px;
+    font-weight: 600;
+}
+
+.playlistResult {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.playlistItem {
+    background-color: #202020;
+    max-width: 200px;
+    border-radius: 12px;
+    margin: 12px 12px 12px 0px;
+}
+
+.playlistInfo {
+    margin: 10px;
+    font-weight: 500;
+}
+
+.playlistImage {
+    object-fit: contain;
+    height: 200px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.playlistInfoDescription {
+    color: darkgrey;
+    font-size: small;
+    margin-top: 5px;
+}

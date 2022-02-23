@@ -1,4 +1,5 @@
 export const ActionTypes = {
     SET_ACCESS_TOKEN: 'SET_ACCESS_TOKEN',
     SET_USER: 'SET_USER',
+    SET_FEATURED_PLAYLIST: 'SET_FEATURED_PLAYLIST',
 }

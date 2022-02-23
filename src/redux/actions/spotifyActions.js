@@ -13,3 +13,10 @@ export const setUser = (user) => {
         payload: user,
     }
 }
+
+export const setFeaturedPlaylist = (playlists) => {
+    return {
+        type: ActionTypes.SET_FEATURED_PLAYLIST,
+        payload: playlists,
+    }
+}

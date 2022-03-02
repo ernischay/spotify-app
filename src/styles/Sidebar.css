@@ -43,3 +43,7 @@
     bottom: 48px;
     position: absolute;
 }
+
+.downArrow {
+    display: none;
+}

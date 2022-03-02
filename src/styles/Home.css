@@ -1,39 +1,60 @@
 .homePageGreeting {
     color: #1db954;
-    font-size: 40px;
+    font-size: 48px;
+    margin-bottom: 20px;
 }
 
-.playlist {
+.playlist,
+.songs {
     margin: 20px 0px;
     font-weight: 600;
 }
 
-.playlistResult {
+.playlistResult,
+.searchResult {
     display: flex;
     flex-wrap: wrap;
 }
 
-.playlistItem {
+.playlistItem,
+.songItem {
     background-color: #202020;
     max-width: 200px;
     border-radius: 12px;
     margin: 12px 12px 12px 0px;
+    cursor: pointer;
 }
 
-.playlistInfo {
+.playlistInfo,
+.songInfo {
     margin: 10px;
     font-weight: 500;
 }
 
-.playlistImage {
+.playlistImage,
+.songImage {
     object-fit: contain;
     height: 200px;
+    width: 200px;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
 }
 
-.playlistInfoDescription {
+.playlistInfoDescription,
+.songArtistName {
     color: darkgrey;
     font-size: small;
     margin-top: 5px;
+    word-break: break-word;
+}
+
+a {
+    color: #1db954;
+    text-decoration: none;
+}
+
+.featuredPlaylist,
+.recentSongs {
+    display: flex;
+    justify-content: space-between;
 }

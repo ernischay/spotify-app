@@ -3,11 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { useEffect } from 'react'
 import { setUser } from '../redux/actions/spotifyActions'
 import { ReactComponent as LinkIcon } from '../assets/linkIcon.svg'
-import axios from 'axios'
-
-const spotify = axios.create({
-    baseURL: 'https://api.spotify.com/v1',
-})
+import { spotify } from '../spotify.config'
 
 export default function Profile() {
     const token = useSelector((state) => state.spotify.token)
@@ -36,20 +32,10 @@ export default function Profile() {
                 <div className='profile'>
                     <img src={user.images['0'].url} alt='profile' />
                     <div className='profileInfo'>
-                        <h1>{user.display_name}</h1>
-                        <a
-                            className='link'
-                            href={user.external_urls.spotify}
-                            target='_blank'
-                            rel='noreferrer'
-                        >
+                        <h2>{user.display_name}</h2>
+                        <a className='link' href={user.external_urls.spotify} target='_blank' rel='noreferrer'>
                             Open in spotify
-                            <LinkIcon
-                                style={{ marginLeft: '6px' }}
-                                fill='#fff'
-                                width='24px'
-                                height='24px'
-                            />
+                            <LinkIcon style={{ marginLeft: '6px' }} fill='#fff' width='24px' height='24px' />
                         </a>
                     </div>
                 </div>

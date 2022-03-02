@@ -17,80 +17,23 @@ export default function Sidebar() {
         <div className='sidebar'>
             <img className='sidebarLogo' src={logo} alt='spotify' />
             <ul className='sidebarItems'>
-                <li
-                    className={
-                        location.pathname === '/'
-                            ? 'sidebarItemActive'
-                            : 'sidebarItem'
-                    }
-                    onClick={() => navigate('/')}
-                >
-                    <HomeIcon
-                        fill={location.pathname === '/' ? '#1db954' : '#fff'}
-                        width='24px'
-                        height='24px'
-                    />
+                <li className={location.pathname === '/' ? 'sidebarItemActive' : 'sidebarItem'} onClick={() => navigate('/')}>
+                    <HomeIcon fill={location.pathname === '/' ? '#1db954' : '#fff'} width='24px' height='24px' />
                     <p className='sidebarItemName'>Home</p>
                 </li>
-                <li
-                    className={
-                        location.pathname === '/profile'
-                            ? 'sidebarItemActive'
-                            : 'sidebarItem'
-                    }
-                    onClick={() => navigate('/profile')}
-                >
-                    <ProfileIcon
-                        fill={
-                            location.pathname === '/profile'
-                                ? '#1db954'
-                                : '#fff'
-                        }
-                        width='24px'
-                        height='24px'
-                    />
+                <li className={location.pathname === '/profile' ? 'sidebarItemActive' : 'sidebarItem'} onClick={() => navigate('/profile')}>
+                    <ProfileIcon fill={location.pathname === '/profile' ? '#1db954' : '#fff'} width='24px' height='24px' />
                     <p className='sidebarItemName'>Profile</p>
                 </li>
-                <li
-                    className={
-                        location.pathname === '/search'
-                            ? 'sidebarItemActive'
-                            : 'sidebarItem'
-                    }
-                    onClick={() => navigate('/search')}
-                >
-                    <SearchIcon
-                        fill={
-                            location.pathname === '/search' ? '#1db954' : '#fff'
-                        }
-                        width='24px'
-                        height='24px'
-                    />
+                <li className={location.pathname === '/search' ? 'sidebarItemActive' : 'sidebarItem'} onClick={() => navigate('/search')}>
+                    <SearchIcon fill={location.pathname === '/search' ? '#1db954' : '#fff'} width='24px' height='24px' />
                     <p className='sidebarItemName'>Search</p>
                 </li>
-                <li
-                    className={
-                        location.pathname === '/playlist'
-                            ? 'sidebarItemActive'
-                            : 'sidebarItem'
-                    }
-                    onClick={() => navigate('/playlist')}
-                >
-                    <PlaylistIcon
-                        fill={
-                            location.pathname === '/playlist'
-                                ? '#1db954'
-                                : '#fff'
-                        }
-                        width='24px'
-                        height='24px'
-                    />
+                <li className={location.pathname === '/playlist' ? 'sidebarItemActive' : 'sidebarItem'} onClick={() => navigate('/playlist')}>
+                    <PlaylistIcon fill={location.pathname === '/playlist' ? '#1db954' : '#fff'} width='24px' height='24px' />
                     <p className='sidebarItemName'>Featured Playlist</p>
                 </li>
-                <li
-                    className='sidebarItem'
-                    onClick={() => dispatch(setAccessToken(null))}
-                >
+                <li className='sidebarItem' onClick={() => dispatch(setAccessToken(null))}>
                     <LogoutIcon fill='#fff' width='24px' height='24px' />
                     <p className='sidebarItemName'>Logout</p>
                 </li>

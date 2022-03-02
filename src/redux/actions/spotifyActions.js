@@ -20,3 +20,24 @@ export const setFeaturedPlaylist = (playlists) => {
         payload: playlists,
     }
 }
+
+export const setRecentlyPlayed = (songs) => {
+    return {
+        type: ActionTypes.SET_RECENTLY_PLAYED,
+        payload: songs,
+    }
+}
+
+export const setSearchResult = (results) => {
+    return {
+        type: ActionTypes.SET_SEARCH_RESULT,
+        payload: results,
+    }
+}
+
+export const setCurrentTrack = (trackUri) => {
+    return {
+        type: ActionTypes.SET_CURRENT_TRACK,
+        payload: trackUri,
+    }
+}

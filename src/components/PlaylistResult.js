@@ -6,7 +6,7 @@ export default function PlaylistResult() {
     return (
         <div className='playlistResult'>
             {playlists?.map((playlist) => (
-                <PlaylistItem key={playlist.id} playlist={playlist} />
+                <PlaylistItem key={playlist.id} playlist={playlist} uri={playlist.uri} />
             ))}
         </div>
     )

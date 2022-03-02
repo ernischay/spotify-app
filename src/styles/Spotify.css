@@ -2,6 +2,8 @@
     display: flex;
     background-color: #121212;
     font-family: sans-serif;
+    overflow: hidden;
+    height: 100vh;
 }
 
 @media (max-width: 768px) {
@@ -22,6 +24,7 @@
     flex: 0.8;
     flex-direction: column;
     color: white;
+    overflow-y: auto;
 }
 
 .link {

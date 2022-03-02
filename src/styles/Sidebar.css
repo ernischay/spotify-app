@@ -11,7 +11,7 @@
 .sidebarLogo {
     object-fit: contain;
     height: 70px;
-    padding: 20px;
+    padding: 40px;
 }
 
 .sidebarItems {
@@ -40,6 +40,6 @@
 }
 
 .sidebarItem:last-child {
-    bottom: 20vh;
+    bottom: 48px;
     position: absolute;
 }
